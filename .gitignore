@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Build (CMake / CUDA) ---
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+*.o
+*.a
+*.so
+*.ptx
+*.cubin
+*.fatbin
+
+# --- Date (scene Sentinel-2 si derivate); ramane doar data/README.md ---
+data/*
+!data/README.md
+*.SAFE/
+*.jp2
+
+# --- Modele și motoare ( motorul TensorRT depinde de placă) ---
+*.onnx
+*.engine
+*.plan
+*.trt
+*.pt
+*.pth
+
+# --- Rezultate generate și profilări ---
+results/
+outputs/
+*.nsys-rep
+*.ncu-rep
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
