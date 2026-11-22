@@ -1,0 +1,15 @@
+{
+  "region": "val_extern",
+  "min_size": 15,
+  "model": "unet_drought_best.pt",
+  "pixels_counted": 120560400,
+  "tp": 52578245,
+  "fp": 3372754,
+  "fn": 1773785,
+  "tn": 62835616,
+  "precision": 0.9397,
+  "recall": 0.9674,
+  "f1": 0.9533,
+  "iou_seceta": 0.9108,
+  "miou": 0.9176
+}

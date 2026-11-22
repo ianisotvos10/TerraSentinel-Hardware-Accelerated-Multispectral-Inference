@@ -18,14 +18,16 @@ CMakeFiles/
 *.cubin
 *.fatbin
 
-# --- Date (scene Sentinel-2 si derivate); ramane doar data/README.md ---
+# --- Date (scene Sentinel-2 și derivate); rămâne doar data/README.md ---
 data/*
 !data/README.md
+test_data/
 *.SAFE/
 *.jp2
 
-# --- Modele și motoare ( motorul TensorRT depinde de placă) ---
+# --- Modele și motoare (mari; motorul TensorRT depinde de placă) ---
 *.onnx
+*.onnx.data
 *.engine
 *.plan
 *.trt
@@ -44,3 +46,17 @@ outputs/
 .DS_Store
 Thumbs.db
 ~$*
+
+# Date masive (imagini satelitare .jp2)
+data/
+test_data/
+*.jp2
+
+# Checkpoint-uri intermediare PyTorch (grele)
+models/*.pt
+
+# Cache Python si medii virtuale
+__pycache__/
+*.pyc
+venv/
+.env

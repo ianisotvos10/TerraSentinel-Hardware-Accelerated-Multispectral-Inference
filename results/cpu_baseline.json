@@ -1,0 +1,44 @@
+{
+  "platform": "CPU",
+  "region": "zone_campie",
+  "patch_size": 512,
+  "num_patches": 10,
+  "total_patches_scene": 484,
+  "scene_pixels": 120560400,
+  "cpu_count": 12,
+  "ort_threads": "implicit",
+  "onnxruntime_version": "1.32.0",
+  "environment": {
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "system": "Windows",
+    "python": "3.14.8",
+    "numpy": "2.5.4"
+  },
+  "repeat_runs": 3,
+  "timings_seconds": {
+    "t_load": 6.0812,
+    "t_pre_mean": 0.0915,
+    "t_pre_std": 0.0038,
+    "t_pre_median": 0.0935,
+    "t_pre_min": 0.0863,
+    "t_pre_per_patch": 0.009154,
+    "t_inf_mean": 3.7955,
+    "t_inf_std": 0.1655,
+    "t_inf_median": 3.7301,
+    "t_inf_min": 3.6335,
+    "t_inf_per_patch": 0.379545,
+    "T_compute_selected": 3.887,
+    "T_total": 194.2116
+  },
+  "t_pre_all_runs": [
+    0.0935,
+    0.0948,
+    0.0863
+  ],
+  "t_inf_all_runs": [
+    3.6335,
+    4.0228,
+    3.7301
+  ]
+}
